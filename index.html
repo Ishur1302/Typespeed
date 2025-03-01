@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Speed Tester</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
     <div class="container">
         <h1>Typing Speed Tester</h1>
         <p>Type the text below as fast and accurately as possible:</p>
+        
         <div class="text-box" id="text-box"></div>
-        <textarea id="input-box" placeholder="Start typing here.." oninput="checkTyping()"></textarea>
+        
+        <textarea id="input-box" placeholder="Start typing here..." oninput="checkTyping()"></textarea>
+        
         <div class="stats">
-            <p>Time: <span id="timer">60</span>s</p>
-            <p>WPM: <span id="wpm">0</span></p>
-            <p>Accuracy: <span id="accuracy">100</span></p>
-
+            <p>⏳ Time: <span id="timer">60</span>s</p>
+            <p>⌨ WPM: <span id="wpm">0</span></p>
+            <p>🎯 Accuracy: <span id="accuracy">100</span>%</p>
         </div>
-        <button onclick="resetTest()">Restart</button>
-    </div>    
+        
+        <button onclick="resetTest()">🔄 Restart</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
